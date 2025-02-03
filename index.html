@@ -95,12 +95,12 @@
     <script>
 
         const oktaSignIn = new OktaSignIn({
-            baseUrl: "https://dev-93660238-admin.okta.com", //e.g. https://mydomain.okta.com
+            baseUrl: "https://dev-93660238.okta.com", //e.g. https://mydomain.okta.com
             clientId: "0oan6ewnqxzvLmWOy5d7",
             redirectUri: "https://jolly-grass-008869f1e.4.azurestaticapps.net/index.html", // For example http://localhost:5501/CopilotStudioSamples/3rdPartySSOWithOKTA/public/index.html
             authParams: {
                 responseType: ['code'],
-                issuer: "https://dev-93660238-admin.okta.com/oauth2/default", //for example: https://mydomain.okta.com/oauth2/default
+                issuer: "https://dev-93660238.okta.com/oauth2/default", //for example: https://mydomain.okta.com/oauth2/default
                 display: 'page',
                 pkce: true,
                 scopes: ['openid', 'email', 'profile'],
